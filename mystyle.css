@@ -31,6 +31,7 @@ nav{
     background-color:#252525;
     display: flex;
     justify-content: space-between;
+    z-index: 111;
 }
 nav .menu ul{
     display: flex;
@@ -88,6 +89,7 @@ nav .menu ul li{
 
 .container{
     padding: 50px 8%;
+    position: relative;
 }
 .row-1 h1{
     color: #252525;
@@ -150,8 +152,6 @@ nav .menu ul li{
 }
 
 .row-1 button{
-    position: relative;
-    right: 0;
     font-size: 17px;
     border-radius: 10px;
     outline: none;
@@ -167,4 +167,47 @@ nav .menu ul li{
 }
 .row-1 button:hover a{
     color: #252525;
+}
+
+/* chapter-box  */
+
+
+.chapter-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.c-1{
+    top: 0;
+    position: absolute;
+    background-color: #25252564;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.box p,h1{
+    color: #252525;
+    margin-bottom: 25px;
+}
+.box button{
+    background-color: #252525;
+    color: white;
+    width: 150px;
+    border-radius: 25px;
+    padding: 8px;
+    cursor: pointer;
+}
+.box{
+    background-color: #ffff;
+    color: #252525;
+    width: 80%;
+    height: 75vh;
+    padding: 30px;
+    border-radius: 5px;
+
 }
